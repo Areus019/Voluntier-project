@@ -13,34 +13,34 @@ function seedData() {
   if (localStorage.getItem('seedVersion') === 'v3') return;
   // Sample Datasets
   save('opportunities', [
-    { id: 1, title: 'Beach Clean-up Drive', org: 'Green Earth PH', orgId: 1, category: 'Environmental', location: 'Manila Bay', date: '2026-06-12', points: 50, image: 'images/img1.jpg',
+    { id: 1, title: 'Beach Clean-up Drive', org: 'Green Earth PH', orgId: 1, category: 'Environmental', location: 'Manila Bay', date: '2026-06-12', points: 50, image: 'images/thumbnail1-1.jpg',
       description: 'Join us for a sunrise clean-up along Manila Bay. Gloves, sacks and refreshments will be provided. Help us keep our coastlines plastic-free and protect marine life.',
       perks: ['Free t-shirt', 'Snacks & water', 'Certificate'] },
-    { id: 2, title: 'Animal Rescue Volunteer', org: 'Paws Rescue', orgId: 2, category: 'Rescue', location: 'Quezon City', date: '2026-06-18', points: 40, image: 'images/img2.jpg',
+    { id: 2, title: 'Animal Rescue Volunteer', org: 'Paws Rescue', orgId: 2, category: 'Rescue', location: 'Quezon City', date: '2026-06-18', points: 40, image: 'images/thumbnail12-1.jpg',
       description: 'Help feed, bathe and socialize rescued cats and dogs at our QC shelter. No experience needed — just a kind heart and steady hands.',
       perks: ['Shelter tour', 'Adoption priority', 'Photos with the pups'] },
-    { id: 3, title: 'First Aid Training', org: 'Red Cross', orgId: 3, category: 'First Aid', location: 'Makati', date: '2026-06-22', points: 60, image: 'images/img3.jpg',
+    { id: 3, title: 'First Aid Training', org: 'Red Cross', orgId: 3, category: 'First Aid', location: 'Makati', date: '2026-06-22', points: 60, image: 'images/thumbnail3-1.jpg',
       description: 'A free 1-day certified first-aid workshop covering CPR, bleeding control, and emergency response. Open to all ages 16+.',
       perks: ['Official certificate', 'Free training kit', 'Lunch included'] },
-    { id: 4, title: 'Community Feeding', org: 'Hope Kitchen', orgId: 4, category: 'Feeding Program', location: 'Pasig', date: '2026-06-25', points: 45, image: 'images/img4.jpg',
+    { id: 4, title: 'Community Feeding', org: 'Hope Kitchen', orgId: 4, category: 'Feeding Program', location: 'Pasig', date: '2026-06-25', points: 45, image: 'images/thumbnail4-1.jpg',
       description: 'Prepare and serve warm meals to 200+ children in Pasig. Volunteers help with cooking, packing, and serving the community.',
       perks: ['Apron & cap', 'Meals provided', 'Group photo'] },
-    { id: 5, title: 'Tree Planting', org: 'Green Earth PH', orgId: 1, category: 'Environmental', location: 'Antipolo', date: '2026-07-02', points: 55, image: 'images/img5.jpg',
+    { id: 5, title: 'Tree Planting', org: 'Green Earth PH', orgId: 1, category: 'Environmental', location: 'Antipolo', date: '2026-07-02', points: 55, image: 'images/thumbnail1-2.jpg',
       description: 'Plant 1,000 native saplings in the Antipolo highlands. Transportation from QC provided. Wear sturdy shoes and bring sunblock.',
-      perks: ['Transport', 'Free shirt', 'Tree dedication'] }
-    { id: 6, title: 'Bottle Recycling ', org: 'Green Earth PH', orgId: 1, category: 'Environmental', location: 'Cavite', date: '2026-08-04', points: 70, image: 'images/img5.jpg',
+      perks: ['Transport', 'Free shirt', 'Tree dedication'] },
+    { id: 6, title: 'Bottle Recycling ', org: 'Green Earth PH', orgId: 1, category: 'Environmental', location: 'Cavite', date: '2026-08-04', points: 70, image: 'images/thumbnail1-3.jpg',
       description: 'Collection and segregation of water bottles, and transfer them to the warehouse.',
-      perks: ['Transport', 'Snacks & water', 'Free shirt and towel'] }
-    { id: 7, title: 'Pet Vaccination', org: 'Paws Rescue', orgId:2, category: 'Rescue', location: 'Quezon City', date: '2026-07-02', points: 65, image: 'images/img5.jpg',
+      perks: ['Transport', 'Snacks & water', 'Free shirt and towel'] },
+    { id: 7, title: 'Pet Vaccination', org: 'Paws Rescue', orgId:2, category: 'Rescue', location: 'Quezon City', date: '2026-07-02', points: 65, image: 'images/thumbnail2-2.jpg',
       description: 'Help with setting up the vaccination site, help veterinarians with administering vaccine, and cleaning the area.',
-      perks: ['Transport', 'Free Anti Rabies Vaccination', 'Food and Snacks'] }
-    { id: 8, title: 'Hunger Relief PRogram', org: 'Project Pearl', orgId:5, category: 'Feeding Program', location: 'Tondo, Manila', date: '2026-09-12', points: 40, image: 'images/img5.jpg',
+      perks: ['Transport', 'Free Anti Rabies Vaccination', 'Food and Snacks'] },
+    { id: 8, title: 'Hunger Relief PRogram', org: 'Project Pearl', orgId:5, category: 'Feeding Program', location: 'Tondo, Manila', date: '2026-09-12', points: 40, image: 'images/thumbnail4-2.jpg',
       description: 'Prepare meals for 150+ children, set up the station, and distribute food.',
-      perks: ['Apron and Cap', 'Transport', 'Food and Snacks'] }
-    { id: 9, title: 'Blood Letting Campaign', org: 'Red Cross', orgId:3, category: 'First Aid', location: 'Quezon City', date: '2026-09-21', points: 55, image: 'images/img5.jpg',
+      perks: ['Apron and Cap', 'Transport', 'Food and Snacks'] },
+    { id: 9, title: 'Blood Letting Campaign', org: 'Red Cross', orgId:3, category: 'First Aid', location: 'Quezon City', date: '2026-09-21', points: 55, image: 'images/thumbnail3-2.jpg',
       description: 'Help donate blood to those in need. Available for healthy individuals over the age of 18+ with no recent medical complications.',
-      perks: ['Seminar', 'Free Blood Analysis', 'Water'] }
-    { id: 10, title: 'Relief Good Distribution', org: 'Angat Life PH', orgId:6, category: 'Humanitarian Aid', location: 'Penarrubia, La Paz', date: '2026-10-09', points: 80, image: 'images/img5.jpg',
+      perks: ['Seminar', 'Free Blood Analysis', 'Water'] },
+    { id: 10, title: 'Relief Good Distribution', org: 'Angat Life PH', orgId:6, category: 'Humanitarian Aid', location: 'Penarrubia, La Paz', date: '2026-10-09', points: 80, image: 'images/thumbnail5-1.jpg',
       description: 'Help with setting up the site, trasport the relief goods, and distribute.',
       perks: ['Transport', 'Free shirt', 'Food and Snacks'] }
   ]);
@@ -69,13 +69,13 @@ function seedData() {
       about: 'Community kitchen serving 1,500 hot meals weekly to children in low-income barangays.',
       community: 'Pasig · Mandaluyong',
       officers: [{ name: 'Tita Rose', role: 'Head Cook' }, { name: 'JM Aquino', role: 'Logistics' }],
-      members: ['Kira', 'Leo', 'Mina', 'Nico', 'Owen'] }
+      members: ['Kira', 'Leo', 'Mina', 'Nico', 'Owen'] },
     { id: 5, name: 'Project Pearl', cause: 'Feeding Program', emoji: '🍲',
       tagline: 'We are smarter when there is no hunger.',
       about: 'An organization of concerned individuals who wants to provide food to children in low-income barangays.',
       community: 'Manila',
       officers: [{ name: 'Ate Mina', role: 'Head Cook' }, { name: 'JJ Recto', role: 'Logistics' }],
-      members: ['Kyle', 'Rina', 'Jay', 'Mark', 'Owen'] }
+      members: ['Kyle', 'Rina', 'Jay', 'Mark', 'Owen'] },
     { id: 6, name: 'Angat Life PH', cause: 'Humanitarian Aid', emoji: '⛑',
       tagline: 'Lets help ech other in these trying times.',
       about: 'Volunteer-driven organization that holds seminars, provides relief to areas struck by disasters.',
