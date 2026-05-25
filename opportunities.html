@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opportunities — Voluntier</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <a class="logo" href="index.html"><span class="logo-mark">V</span>Voluntier</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="opportunities.html" class="active">Opportunities</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="forums.html">Forums</a>
+    </nav>
+    <a href="login.html" class="btn">Get started</a>
+  </div>
+</header>
+
+<section class="container">
+  <h1 class="section-title reveal">Volunteer Opportunities</h1>
+  <p class="section-sub reveal">Filter missions by cause and join the ones that move you.</p>
+
+  <div class="filter-bar reveal">
+    <button class="btn btn-outline" data-filter="all" onclick="renderOpportunities('opp-list','all')">All</button>
+    <button class="btn btn-outline" data-filter="Environmental" onclick="renderOpportunities('opp-list','Environmental')">🌱 Environmental</button>
+    <button class="btn btn-outline" data-filter="Rescue" onclick="renderOpportunities('opp-list','Rescue')">🐾 Rescue</button>
+    <button class="btn btn-outline" data-filter="First Aid" onclick="renderOpportunities('opp-list','First Aid')">⛑ First Aid</button>
+    <button class="btn btn-outline" data-filter="Feeding Program" onclick="renderOpportunities('opp-list','Feeding Program')">🍲 Feeding</button>
+  </div>
+
+  <div id="opp-list" class="grid"></div>
+</section>
+
+<footer class="footer">
+  © 2026 Voluntier · Small acts. Real change. <a href="about.html">About</a> · <a href="contact.html">Contact</a>
+</footer>
+<script src="js/main.js"></script>
+<script>renderOpportunities('opp-list','all');</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events — Voluntier</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <a class="logo" href="index.html"><span class="logo-mark">V</span>Voluntier</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="forums.html">Forums</a>
+    </nav>
+    <a href="login.html" class="btn">Get started</a>
+  </div>
+</header>
+
+<section class="container">
+  <h1 class="section-title">Upcoming Events</h1>
+  <p class="section-sub">Volunteer fairs, trainings, and community gatherings.</p>
+  <div id="event-list" class="grid"></div>
+</section>
+
+<footer class="footer">
+  © 2026 Voluntier · Small acts. Real change. <a href="about.html">About</a> · <a href="contact.html">Contact</a>
+</footer>
+<script src="js/main.js"></script>
+<script>renderEvents('event-list');</script>
+</body>
+</html>

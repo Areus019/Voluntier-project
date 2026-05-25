@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up — Voluntier</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <a class="logo" href="index.html"><span class="logo-mark">V</span>Voluntier</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="forums.html">Forums</a>
+    </nav>
+    <a href="login.html" class="btn">Log in</a>
+  </div>
+</header>
+
+<section class="container">
+  <h1 class="section-title" style="text-align:center;">Create your account</h1>
+  <p class="section-sub" style="text-align:center;">It only takes 30 seconds.</p>
+
+  <form class="form" onsubmit="signup(event)">
+    <label for="name">Full name</label>
+    <input id="name" type="text" required>
+    <label for="email">Email</label>
+    <input id="email" type="email" required>
+    <label for="password">Password</label>
+    <input id="password" type="password" required>
+    <p class="hint">At least 6 characters.</p>
+    <label for="cause">Favorite cause</label>
+    <select id="cause">
+      <option>Environmental</option><option>Rescue</option>
+      <option>First Aid</option><option>Feeding Program</option>
+    </select>
+    <button type="submit" class="btn">Sign up</button>
+    <p class="hint" style="text-align:center; margin-top:14px;">Already have an account? <a href="login.html">Log in</a></p>
+  </form>
+</section>
+
+<footer class="footer">© 2026 Voluntier</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

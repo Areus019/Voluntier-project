@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forums — Voluntier</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <a class="logo" href="index.html"><span class="logo-mark">V</span>Voluntier</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="forums.html" class="active">Forums</a>
+    </nav>
+    <a href="login.html" class="btn">Get started</a>
+  </div>
+</header>
+
+<section class="container">
+  <h1 class="section-title reveal">Community Forums</h1>
+  <p class="section-sub reveal">Ask questions, share tips, and react to other volunteers' stories.</p>
+
+  <form class="form reveal" onsubmit="addForumPost(event)" style="margin-bottom: 30px;">
+    <label for="post-title">Start a new topic</label>
+    <input id="post-title" type="text" placeholder="What's your question?">
+    <button type="submit" class="btn">Post topic</button>
+  </form>
+
+  <div id="forum-list"></div>
+</section>
+
+<footer class="footer">
+  © 2026 Voluntier · Small acts. Real change. <a href="about.html">About</a> · <a href="contact.html">Contact</a>
+</footer>
+<script src="js/main.js"></script>
+<script>renderForums('forum-list');</script>
+</body>
+</html>

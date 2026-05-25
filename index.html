@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voluntier — Volunteer for what moves you</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script src="js/main.js"></script>
+
+<header class="header">
+  <div class="nav">
+    <a class="logo" href="index.html"><span class="logo-mark">V</span>Voluntier</a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="forums.html">Forums</a>
+    </nav>
+    <a href="login.html" class="btn">Get started</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide"><img src="images/img1.jpg" alt=""></div>
+      <div class="slide"><img src="images/img2.jpg" alt=""></div>
+      <div class="slide"><img src="images/img3.jpg" alt=""></div>
+      <div class="slide"><img src="images/img4.jpg" alt=""></div>
+      <div class="slide"><img src="images/img5.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="hero-overlay">
+    <div>
+      <h1>Small acts.<br>Real change.</h1>
+      <p>Find a cause that moves you. Join a community making a difference today.</p>
+      <div class="hero-cta">
+        <a class="btn alt" href="opportunities.html">Browse missions</a>
+        <a class="btn btn-outline" style="background:rgba(255,255,255,.15);color:#fff;border-color:#fff" href="organizations.html">Explore organizations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title reveal">Pick a cause</h2>
+  <p class="section-sub reveal">Four ways to make an impact in your community.</p>
+  <div class="grid">
+    <a href="organizations.html?cause=Environmental" class="card card-link reveal">
+      <img class="thumbnail" src="images/thumbnail1.jpg" alt="">
+      <div class="card-body"><h3>🌱 Environmental</h3><p class="muted">Clean-ups, tree planting, recycling drives.</p></div>
+    </a>
+    <a href="organizations.html?cause=Rescue" class="card card-link reveal" style="animation-delay:80ms">
+      <img class="thumbnail" src="images/thumbnail2.jpg" alt="">
+      <div class="card-body"><h3>🐾 Rescue</h3><p class="muted">Help shelters and animal welfare groups.</p></div>
+    </a>
+    <a href="organizations.html?cause=First Aid" class="card card-link reveal" style="animation-delay:160ms">
+      <img class="thumbnail" src="images/thumbnail3.jpg" alt="">
+      <div class="card-body"><h3>⛑ First Aid</h3><p class="muted">Train, respond, and save lives.</p></div>
+    </a>
+    <a href="organizations.html?cause=Feeding Program" class="card card-link reveal" style="animation-delay:240ms">
+      <img class="thumbnail" src="images/thumbnail4.jpg" alt="">
+      <div class="card-body"><h3>🍲 Feeding Program</h3><p class="muted">Cook and serve meals to those in need.</p></div>
+    </a>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title reveal">Latest opportunities</h2>
+  <p class="section-sub reveal">A few missions happening soon.</p>
+  <div id="home-opps" class="grid"></div>
+</section>
+
+<footer class="footer">
+  © 2026 Voluntier · Small acts. Real change. <a href="about.html">About</a> · <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  const all = JSON.parse(localStorage.getItem('opportunities')) || [];
+  document.getElementById('home-opps').innerHTML = all.slice(0,3).map((o,i) => `
+    <a class="card card-link reveal" style="animation-delay:${i*80}ms" href="opportunity.html?id=${o.id}">
+      <div class="card-media"><img src="${o.image}" alt=""></div>
+      <div class="card-body">
+        <span class="tag accent">${o.category}</span>
+        <h3>${o.title}</h3>
+        <div class="meta">${o.org} · ${o.location}</div>
+        <p class="muted">${o.date} · +${o.points} pts</p>
+        <span class="link-arrow">View details →</span>
+      </div>
+    </a>
+  `).join('');
+  initReveal();
+</script>
+</body>
+</html>
