@@ -16,7 +16,7 @@ function seedData() {
     { id: 1, title: 'Beach Clean-up Drive', org: 'Green Earth PH', orgId: 1, category: 'Environmental', location: 'Manila Bay', date: '2026-06-12', points: 50, image: 'images/thumbnail1-1.jpg',
       description: 'Join us for a sunrise clean-up along Manila Bay. Gloves, sacks and refreshments will be provided. Help us keep our coastlines plastic-free and protect marine life.',
       perks: ['Free t-shirt', 'Snacks & water', 'Certificate'] },
-    { id: 2, title: 'Animal Rescue Volunteer', org: 'Paws Rescue', orgId: 2, category: 'Rescue', location: 'Quezon City', date: '2026-06-18', points: 40, image: 'images/thumbnail12-1.jpg',
+    { id: 2, title: 'Animal Rescue Volunteer', org: 'Paws Rescue', orgId: 2, category: 'Rescue', location: 'Quezon City', date: '2026-06-18', points: 40, image: 'images/thumbnail2-1.jpg',
       description: 'Help feed, bathe and socialize rescued cats and dogs at our QC shelter. No experience needed — just a kind heart and steady hands.',
       perks: ['Shelter tour', 'Adoption priority', 'Photos with the pups'] },
     { id: 3, title: 'First Aid Training', org: 'Red Cross', orgId: 3, category: 'First Aid', location: 'Makati', date: '2026-06-22', points: 60, image: 'images/thumbnail3-1.jpg',
